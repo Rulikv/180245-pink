@@ -30,71 +30,71 @@
       <section class="page-main__contest contest">
         <h1 class="contest__main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <h2 class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-        <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="contest__participant">
-            <label for="surname">Фамилия:</label>
-              <input id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
-            <label for="name">Имя:</label>
-              <input id="name" type="text" name="name" placeholder="Введите ваше имя *">
-            <label for="patronymic">Отчество:</label>
-              <input id="patronymic" type="text" name="name" placeholder="Ну и отчество тоже">
-          </div>
-          <div class="contest__travel">
-            <p class="contest__title">Ваши безбашенные достижения в утешествии</p>
-            <ul class="contest__list">
-              <li class="contest__item contest__item--checked">
-                <input type="checkbox" name="achievements" id="achievements-shark" value="achievements-shark" checked>
-                  <label for="achievements-shark">Сделал селфи с акулой</label>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__fields fields-text">
+            <label class="fields-text__subtitle" for="surname">Фамилия:</label>
+              <input class="fields-text__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            <label class="fields-text__subtitle" for="name">Имя:</label>
+              <input class="fields-text__input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+            <label class="fields-text__subtitle" for="patronymic">Отчество:</label>
+              <input class="fields-text__input" id="patronymic" type="text" name="name" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="form__fields fields-toggle">
+            <legend class="fields-toggle__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="fields-toggle__list">
+              <li class="fields-toggle__item fields-toggle__item--checked">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-shark" value="achievements-shark" checked>
+                  <label class="fields-toggle__subtitle" for="achievements-shark">Сделал селфи с акулой</label>
               </li>
-              <li class="contest__item contest__item--checked">
-                <input type="checkbox" name="achievements" id="achievements-burned" value="achievements-burned" checked>
-                  <label for="achievements-burned">Обгорел на пляже</label>
+              <li class="fields-toggle__item fields-toggle__item--checked">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-burned" value="achievements-burned" checked>
+                  <label class="fields-toggle__subtitle" for="achievements-burned">Обгорел на пляже</label>
               </li>
-              <li class="contest__item">
-                <input type="checkbox" name="achievements" id="achievements-celebrity" value="achievements-celebrity">
-                  <label for="achievements-celebrity">Видел Чака Норриса</label>
+              <li class="fields-toggle__item">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-celebrity" value="achievements-celebrity">
+                  <label class="fields-toggle__subtitle" for="achievements-celebrity">Видел Чака Норриса</label>
               </li>
-              <li class="contest__item">
-                <input type="checkbox" name="achievements" id="achievements-souvenirs" value="achievements-souvenirs">
-                  <label for="achievements-souvenirs">Накупил сувениров</label>
+              <li class="fields-toggle__item">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-souvenirs" value="achievements-souvenirs">
+                  <label class="fields-toggle__subtitle" for="achievements-souvenirs">Накупил сувениров</label>
               </li>
-              <li class="contest__item contest__item--checked">
-                <input type="checkbox" name="achievements" id="achievements-tower" value="achievements-tower" checked>
-                  <label for="achievements-tower">Удержал башню</label>
+              <li class="fields-toggle__item fields-toggle__item--checked">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-tower" value="achievements-tower" checked>
+                  <label class="fields-toggle__subtitle" for="achievements-tower">Удержал башню</label>
               </li>
-              <li class="contest__item">
-                <input type="checkbox" name="achievements" id="achievements-hotel" value="achievements-hotel">
-                  <label for="achievements-hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </div>
-          <div class="contest__contacts">
-            <label for="phone">Номер телефона</label>
-              <input id="phone" type="text" name="phonee" placeholder="Номер, пожалуйста">
-            <label for="email">Адрес почты</label>
-              <input id="email" type="text" name="email" placeholder="Введите почту *">
-          </div>
-          <div class="contest__app">
-            <p class="contest__title">С каким приложением путешествовали?</p>
-            <ul class="contest__list">
-              <li class="contest__item contest__item--checked">
-                <input type="radio" name="app" id="app-ios" value="app-ios" checked>
-                  <label for="app-ios">Pink для iOS</label>
-              </li>
-              <li class="contest__item">
-                <input type="radio" name="app" id="app-android" value="app-android">
-                  <label for="app-android">Pink на Android</label>
-              </li>
-              <li class="contest__item">
-                <input type="radio" name="app" id="app-windows" value="app-windows">
-                  <label for="app-windows">Windows Phone</label>
+              <li class="fields-toggle__item">
+                <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-hotel" value="achievements-hotel">
+                  <label class="fields-toggle__subtitle" for="achievements-hotel">Разгромил отель</label>
               </li>
             </ul>
-          </div>
-          <div class="contest__emotions">
-            <p class="contest__title">Опишите свои эмоции</p>
-            <textarea class="contest__overview" name="emotions" id="emotions" rows="10" cols="20">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </div>
+          </fieldset>
+          <fieldset class="form__fields fields-text">
+            <label class="fields-text__subtitle" for="phone">Номер телефона</label>
+              <input class="fields-text__input" id="phone" type="text" name="phonee" placeholder="Номер, пожалуйста">
+            <label class="fields-text__subtitle" for="email">Адрес почты</label>
+              <input class="fields-text__input" id="email" type="text" name="email" placeholder="Введите почту *">
+          </fieldset>
+          <fieldset class="form__fields fields-toggle">
+            <legend class="fields-toggle__title">С каким приложением путешествовали?</legend>
+            <ul class="fields-toggle__list">
+              <li class="fields-toggle__item fields-toggle__item--checked">
+                <input class="fields-toggle__input" type="radio" name="app" id="app-ios" value="app-ios" checked>
+                  <label class="fields-toggle__subtitle" for="app-ios">Pink для iOS</label>
+              </li>
+              <li class="fields-toggle__item">
+                <input class="fields-toggle__input" type="radio" name="app" id="app-android" value="app-android">
+                  <label class="fields-toggle__subtitle" for="app-android">Pink на Android</label>
+              </li>
+              <li class="fields-toggle__item">
+                <input class="fields-toggle__input" type="radio" name="app" id="app-windows" value="app-windows">
+                  <label class="fields-toggle__subtitle" for="app-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fields fields-text">
+            <legend class="fields-toggle__title">Опишите свои эмоции</legend>
+            <textarea class="fields-text__input" name="emotions" id="emotions" rows="10" cols="20">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
           <button class="contest__submit" type="submit">Отправить форму</button>
           <small class="contest__legend contest__legend--top">
             <sup>*</sup> — обязательные поля
