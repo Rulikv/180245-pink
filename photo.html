@@ -27,108 +27,104 @@
     </header>
 
     <main class="page-main">
-      <section class="page-main__photos photos">
-        <h1 class="photos__main-title">Фотографии пользователей</h1>
-        <div class="photos__list">
-          <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-          <article class="photos__item photos__item--panorama">
-            <img class="photos__image" src="http://placehold.it/320x137" width="320" height="137" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Анна <span class="photos__time">(5 минут назад)</span></b>
-              <p class="photos__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 215</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Левон <span class="photos__time">(5 часов назад)</span></b>
-              <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 356</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Антон <span class="photos__time">(12 часов назад)</span></b>
-              <p class="photos__description">Соседи будут рады!</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 667</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Борис <span class="photos__time">(20 часов назад)</span></b>
-              <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 215</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Сергей <span class="photos__time">(25 часов назад)</span></b>
-              <p class="photos__description">Самая кубанская в мире!</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 4</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Максим <span class="photos__time">(40 часов назад)</span></b>
-              <p class="photos__description">Где снег-то?</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 150</p>
-              </div>
-            </div>
-          </article>
-          <article class="photos__item">
-            <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
-            <div class="photos__info">
-              <b class="photos__author">Надежда <span class="photos__time">(45 часов назад)</span></b>
-              <p class="photos__description">Всем GM и взаимные лайки!</p>
-              <div class="photos__likes likes">
-                <p class="likes__number">Нравится: 2560</p>
-              </div>
-            </div>
-          </article>
-          <div class="photos__panorama panorama">
-              <p class="panorama__text">Панорама дня</p>
-            </div>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+        <p class="page-main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+      <article class="post post--panorama">
+        <img class="post__image" src="http://placehold.it/320x137" width="320" height="137" alt="Фотография пользователя Пинк">
+        <span class="post__label">Панорама дня</span>
+        <div class="post__info">
+          <b class="post__author">Анна <span class="post__time">(5 минут назад)</span></b>
+          <p class="post__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: <span>215</p>
+          </div>
         </div>
-        <div class="photos__share">
-          <h2 class="photos__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-          <div class="photos__edit">
-            <img class="photos__item" src="http://placehold.it/280x375" width="280" height="375" alt="Фотография пользователя Пинк">
-            <ul class="photos__settings settings">
-              <li class="settings__item settings__item--crop">Обрезать фото</li>
-              <li class="settings__item settings__item--color">Заливка фото</li>
-              <li class="settings__item settings__item--contrast">Контраст</li>
-            </ul>
-            <div class="settings__range">
-              <div class="settings__scale"></div>
-              <div class="settings__toggle"></div>
-            </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Левон <span class="photos__time">(5 часов назад)</span></b>
+          <p class="post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 356</p>
           </div>
-          <div class="photos__post">
-            <button class="photos__submit" type="button">Запостить</button>
-            <button class="photos__cancel" type="button">Отмена</button>
+        </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Антон <span class="photos__time">(12 часов назад)</span></b>
+          <p class="post__description">Соседи будут рады!</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 667</p>
           </div>
+        </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Борис <span class="photos__time">(20 часов назад)</span></b>
+          <p class="post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 215</p>
+          </div>
+        </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Сергей <span class="photos__time">(25 часов назад)</span></b>
+          <p class="post__description">Самая кубанская в мире!</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 4</p>
+          </div>
+        </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Максим <span class="photos__time">(40 часов назад)</span></b>
+          <p class="post__description">Где снег-то?</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 150</p>
+          </div>
+        </div>
+      </article>
+      <article class="post">
+        <img class="post__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Пинк">
+        <div class="post__info">
+          <b class="post__author">Надежда <span class="photos__time">(45 часов назад)</span></b>
+          <p class="post__description">Всем GM и взаимные лайки!</p>
+          <div class="post__likes likes">
+            <p class="likes__number">Нравится: 2560</p>
+          </div>
+        </div>
+      </article>
+      <section class="page-main__photo-share photo-share">
+        <h2 class="photo-share__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <img class="photo-share__img" src="http://placehold.it/280x375" width="280" height="375" alt="Фотография пользователя Пинк">
+        <div class="photo-share__editor">
+          <ul class="photo-share__settings settings">
+            <li class="settings__item settings__item--crop">Обрезать фото</li>
+            <li class="settings__item settings__item--color">Заливка фото</li>
+            <li class="settings__item settings__item--contrast">Контраст</li>
+          </ul>
+          <div class="photo-share__range range">
+            <div class="range__scale"></div>
+            <div class="range__toggle"></div>
+          </div>
+        </div>
+        <div class="photo-share__post">
+          <button class="photo-share__submit" type="button">Запостить</button>
+          <button class="photo-share__cancel" type="button">Отмена</button>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <img class="page-header__logo-image" src="http://placehold.it/280x62" width="280" height="62" alt="Приложение «Пинк»">
+      <img class="page-footer__logo-image" src="http://placehold.it/280x62" width="280" height="62" alt="Приложение «Пинк»">
       <div class="page-footer__social social">
         <a class="social__item social__item--twitter" href="#">Пинк в Твиттере</a>
         <a class="social__item social__item--facebook" href="#">Пинк в Фейсбуке</a>
