@@ -1,0 +1,25 @@
+.post {
+  .container;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: @underlayer-color;
+
+  .outline(green);
+}
+
+.post__image {
+  min-width: 280px;
+  min-height: 180px;
+
+  .outline(green);
+}
+
+.post__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .text(700; @x-small; @large; @bg-color; uppercase);
+  background-color: @vivid-color;
+}
