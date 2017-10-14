@@ -1,17 +1,26 @@
 .intro {
-  height: 395px;
+  margin: 0;
+  padding: 0;
+  padding-top: 110px;
   color: @bg-color;
   background-color: @base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat;
   background-position: center bottom;
+
+  .outline(yellow);
+}
+
+.intro__wrapper {
+  .container;
 }
 
 .intro__image {
   display: flex;
-  width: 320px;
+  width: auto;
   height: 100%;
   margin: 0 auto;
+  margin-left: -20px;
 
   .outline(blue);
 }

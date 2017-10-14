@@ -1,5 +1,6 @@
 .page-footer {
   padding-top: 40px;
+  background-color: @bg-color;
 }
 
 .page-footer__wrapper {
@@ -12,19 +13,24 @@
   text-align: center;
 }
 
-.contacts__list {
-  .list-reset;
-}
-
 .contacts__intro-question,
 .contacts__intro-answer {
   margin: 0;
   .text(300; @large; @x-large; @base-color);
 }
 
+.contacts__intro-answer {
+  margin-bottom: 27px;
+}
+
+.contacts__list {
+  .list-reset;
+
+  .outline(blue);
+}
+
 .contacts__title {
   margin: 0;
-  margin-top: 35px;
   .text(700; @medium; @large; @base-color);
 }
 
@@ -32,22 +38,33 @@
 .contacts__email,
 .contacts__text {
   margin: 0;
+  margin-bottom: 25px;
   .text(300; @large; @x-large; @vivid-color);
+  text-decoration: none;
 }
 
 .contacts__map {
   min-height: 200px;
-  margin-top: 38px;
+  width: 100%;
+  margin-top: 20px;
+
+  .outline(blue);
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  .outline(blue);
 }
 
 .social__item {
-  position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
   margin-top: 32px;
-  margin-bottom: 48px;
-  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  font-size: 10px;
 
   .outline(blue);
 }
